@@ -9,8 +9,10 @@
 - [Sen44 Docs](https://github.com/Sensirion/raspberry-pi-uart-sen44)
 - [SCD30 Docs](https://github.com/Sensirion/raspberry-pi-i2c-scd30)
 - [SFA30 Docs](https://github.com/Sensirion/raspberry-pi-uart-sfa3x)
+- [SEN66 Docs](https://github.com/Sensirion/raspberry-pi-i2c-sen66)
 
 ## Setup your Pi: 
+
 
 ### Checking for Updates and making sure Make is installed
 
