@@ -8,7 +8,8 @@ SRCS = main.c \
        src/sen44_i2c.c \
        src/scd30_i2c.c \
        src/sfa3x_i2c.c \
-       src/sen66_i2c.c
+       src/sen66_i2c.c \
+       src/sen5x_i2c.c
 
 OBJS = $(SRCS:.c=.o)
 TARGET = sensors-db
