@@ -1,4 +1,5 @@
 # Ras-Sensirion: C code for Sensirion Sensor Read out on Pi Terminal
+# Examble code for testing sensors
 
 <img src="../imgs/raspi.png">
 
