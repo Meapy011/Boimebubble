@@ -1,0 +1,11 @@
+[Unit]
+Description=InfluxDB 1.8
+
+[Service]
+ExecStart=/usr/local/bin/influxd -config /etc/influxdb/influxdb.conf
+Restart=on-failure
+User=root
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

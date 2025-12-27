@@ -1,0 +1,19 @@
+[Unit]
+Description=Sensor readings Influx startup script
+After=network.target chronograf.service
+Requires=chronograf.service
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi
+ExecStartPre=/bin/sleep 30
+ExecStart=/home/pi/sensors-db
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
