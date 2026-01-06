@@ -29,7 +29,6 @@ Use the following pins to connect your Board
 
 <center><img src="imgs/GPIO-Pinout-Diagram.png" width="900px"></center>
 
-<center><img src="imgs/Board-Pinout-Diagram.png" width="900px"></center>
 
 | *Pin* | *Name* | *Description*                   | *Comments*                       |
 |-------|--------|---------------------------------|----------------------------------|
@@ -38,6 +37,8 @@ Use the following pins to connect your Board
 | 3     | SCL    | I2C: Serial clock input         | TTL 5V and LVTTL 3.3V compatible |
 | 4     | SDA    | I2C: Serial data input / output | TTL 5V and LVTTL 3.3V compatible |
 | 5     | NC     | Do not connect                  |                                  |
+
+<center><img src="imgs/Board-Pinout-Diagram.png" width="900px"></center>
 
 
 ### Raspberry Pi
@@ -52,7 +53,20 @@ Use the following pins to connect your Board
 
        Output:
        ```
-       
+       rm -f main.o sensirion_i2c_hal.o sensirion_i2c.o sensirion_common.o sen44_i2c.o scd30_i2c.o sfa3x_i2c.o sen66_i2c.o sen5x_i2c.o test-sensors
+       gcc -Wall -O2 -I../include -c main.c -o main.o
+       gcc -Wall -O2 -I../include -c ../src/sensirion_i2c_hal.c -o sensirion_i2c_hal.o
+       gcc -Wall -O2 -I../include -c ../src/sensirion_i2c.c -o sensirion_i2c.o
+       gcc -Wall -O2 -I../include -c ../src/sensirion_common.c -o sensirion_common.o
+       gcc -Wall -O2 -I../include -c ../src/sen44_i2c.c -o sen44_i2c.o
+       gcc -Wall -O2 -I../include -c ../src/scd30_i2c.c -o scd30_i2c.o
+       gcc -Wall -O2 -I../include -c ../src/sfa3x_i2c.c -o sfa3x_i2c.o
+       gcc -Wall -O2 -I../include -c ../src/sen66_i2c.c -o sen66_i2c.o
+       gcc -Wall -O2 -I../include -c ../src/sen5x_i2c.c -o sen5x_i2c.o
+       gcc -Wall -O2 -I../include -o test-sensors main.o sensirion_i2c_hal.o sensirion_i2c.o sensirion_common.o sen44_i2c.o scd30_i2c.o sfa3x_i2c.o sen66_i2c.o sen5x_i2c.o
+       # Delete object files after linking
+       rm -f main.o sensirion_i2c_hal.o sensirion_i2c.o sensirion_common.o sen44_i2c.o scd30_i2c.o sfa3x_i2c.o sen66_i2c.o sen5x_i2c.o
+
        ```
 - Test your connected sensor
     - Run `./test-sensors` in the same directory you used to
