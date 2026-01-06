@@ -19,13 +19,13 @@ This document explains how to set up the Sen sensors to run on a Raspberry Pi us
 The sensor board cable has the five different connectors: VCC, GND, SDA, SCL, GND
 Use the following pins to connect your SEN5x:
 
- *SenBoard* |    *Raspberry Pi*           |   *Jumper Wire*   |
- :--------: | :-------------------------: | :---------------: |
-   VCC      |        Pin 2 (5V)           |   Red             |
-   GND      |        Pin 6                |   Black           |
-   SDA      |        Pin 3                |   Green           |
-   SCL      |        Pin 5                |   Yellow          |
-   GND      |        Pin 9 (GND for I2C)  |   Blue            |
+| *SenBoard* |    *Raspberry Pi*           |   *Jumper Wire*   |
+|------------|-----------------------------|-------------------|
+|   VCC      |        Pin 2 (5V)           |   Red             |
+|   GND      |        Pin 6                |   Black           |
+|   SDA      |        Pin 3                |   Green           |
+|   SCL      |        Pin 5                |   Yellow          |
+|   GND      |        Pin 9 (GND for I2C)  |   Blue            |
 
 <center><img src="imgs/GPIO-Pinout-Diagram.png" width="900px"></center>
 
