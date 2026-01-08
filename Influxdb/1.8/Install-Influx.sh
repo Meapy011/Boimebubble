@@ -3,7 +3,6 @@
 #Updates
 sudo apt update
 sudo apt upgrade -y
-sudo apt install libcurl4-openssl-dev -y
 #Getting 1.8 release
 sudo cp influxdb1_8.service /etc/systemd/system/
 cd /tmp
