@@ -1,4 +1,4 @@
-# Ras-Sensirion: C code for Sensirion Sensor Read out on Pi Terminal
+# Biome Bubble: C code for Sensirion Sensor Read out on Pi Terminal
 
 <center><img src="imgs/raspi.png" width=500px" ><center>
 
