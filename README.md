@@ -47,7 +47,7 @@ Use the following pins to connect your Board
 - Download the driver for the [Sensor Board](https://github.com/Meapy011/Ras-Sensirion/tree/main) and extract the `.zip` on your Raspberry Pi
 - Compile the driver
     1. Open a [terminal](https://www.raspberrypi.org/documentation/usage/terminal/?)
-    2. Navigate to the driver directory. E.g. `cd ~/Ras-sensirion/Sensor-examble`
+    2. Navigate to the driver directory. E.g. `cd ~/Biomebubble/Sensor-examble`
     3. Run the `./Build` script to check for updates, make sure Build essential tools are installed and compile the driver
 
        Output:
